@@ -1,0 +1,168 @@
+[gd_scene format=3 uid="uid://ndnul1dqpeag"]
+
+[ext_resource type="Script" uid="uid://c0nowcqci58em" path="res://Player/Scripts/player.gd" id="1_l8h54"]
+[ext_resource type="Script" uid="uid://te12k7pbp2br" path="res://Player/States/Idle.gd" id="2_4ntmi"]
+[ext_resource type="Script" uid="uid://c61swcx7yqqk8" path="res://Player/States/run.gd" id="3_btcbx"]
+[ext_resource type="Script" uid="uid://dpgu52w14b04c" path="res://Player/States/jump.gd" id="4_k53q1"]
+[ext_resource type="Script" uid="uid://dsaydt57c4ba4" path="res://Player/States/Fall.gd" id="5_fhl08"]
+[ext_resource type="Script" uid="uid://5e3sqiys54dr" path="res://Player/States/Crouch.gd" id="6_fhl08"]
+[ext_resource type="Texture2D" uid="uid://cqd513gt5be6r" path="res://Player/Sprites/hero.png" id="7_vtle1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtle1"]
+radius = 8.0
+height = 46.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_od3ui"]
+radius = 8.0
+
+[sub_resource type="Animation" id="Animation_od3ui"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_00tjw"]
+resource_name = "crouch"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [20, 21, 22, 23]
+}
+
+[sub_resource type="Animation" id="Animation_vtle1"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_x3vf3"]
+resource_name = "jump"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 25, 26, 27, 28]
+}
+
+[sub_resource type="Animation" id="Animation_apopc"]
+resource_name = "run"
+length = 0.8
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [14, 15, 16, 17, 18, 19, 12, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_od3ui"]
+_data = {
+&"RESET": SubResource("Animation_od3ui"),
+&"crouch": SubResource("Animation_00tjw"),
+&"idle": SubResource("Animation_vtle1"),
+&"jump": SubResource("Animation_x3vf3"),
+&"run": SubResource("Animation_apopc")
+}
+
+[node name="Player" type="CharacterBody2D" unique_id=1461994922]
+collision_layer = 0
+collision_mask = 3
+floor_constant_speed = true
+floor_snap_length = 3.0
+script = ExtResource("1_l8h54")
+
+[node name="States" type="Node" parent="." unique_id=1093024297]
+
+[node name="Idle" type="Node" parent="States" unique_id=357628136]
+unique_name_in_owner = true
+script = ExtResource("2_4ntmi")
+
+[node name="Run" type="Node" parent="States" unique_id=122867008]
+unique_name_in_owner = true
+script = ExtResource("3_btcbx")
+
+[node name="jump" type="Node" parent="States" unique_id=626200062]
+unique_name_in_owner = true
+script = ExtResource("4_k53q1")
+
+[node name="fall" type="Node" parent="States" unique_id=139652623]
+unique_name_in_owner = true
+script = ExtResource("5_fhl08")
+
+[node name="crouch" type="Node" parent="States" unique_id=1406979340]
+unique_name_in_owner = true
+script = ExtResource("6_fhl08")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1166432231]
+modulate = Color(0.36874998, 0.36874998, 0.36874998, 1)
+position = Vector2(0, -39)
+texture = ExtResource("7_vtle1")
+hframes = 16
+vframes = 4
+
+[node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=2135427101]
+position = Vector2(0, -23)
+shape = SubResource("CapsuleShape2D_vtle1")
+
+[node name="CollisionCrouch" type="CollisionShape2D" parent="." unique_id=176469713]
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_od3ui")
+disabled = true
+
+[node name="Label" type="Label" parent="." unique_id=1849736776]
+offset_left = -32.0
+offset_top = -71.0
+offset_right = 32.0
+offset_bottom = -48.0
+text = "label"
+horizontal_alignment = 1
+
+[node name="OneWayPlatformRayCast" type="RayCast2D" parent="." unique_id=1034616397]
+target_position = Vector2(0, 4)
+collision_mask = 2
+hit_from_inside = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=253913029]
+libraries/ = SubResource("AnimationLibrary_od3ui")
+autoplay = &"idle"
