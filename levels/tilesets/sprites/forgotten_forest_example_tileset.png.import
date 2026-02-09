@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c824nuid3k4h"
-path="res://.godot/imported/Gemini_Generated_Image_qicbjdqicbjdqicb.png-db1a92d830c6a30a14c14e23812a65c2.ctex"
+uid="uid://csdboc6ondey"
+path="res://.godot/imported/forgotten_forest_example_tileset.png-3277205aa86decc8e0a67df9ac2fbd81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gemini_Generated_Image_qicbjdqicbjdqicb.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_qicbjdqicbjdqicb.png-db1a92d830c6a30a14c14e23812a65c2.ctex"]
+source_file="res://levels/tilesets/sprites/forgotten_forest_example_tileset.png"
+dest_files=["res://.godot/imported/forgotten_forest_example_tileset.png-3277205aa86decc8e0a67df9ac2fbd81.ctex"]
 
 [params]
 

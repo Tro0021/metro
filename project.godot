@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Metro"
-run/main_scene="uid://dmlcaj1tsk7tf"
+run/main_scene="uid://ccxi1l11cch26"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="uid://c824nuid3k4h"
+config/icon="uid://dbgv3y7hy66oa"
 
 [display]
 
