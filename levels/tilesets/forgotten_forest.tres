@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" format=3 uid="uid://b5sq4hkfadurb"]
 
-[ext_resource type="Texture2D" uid="uid://csdboc6ondey" path="res://levels/tilesets/sprites/forgotten_forest_example_tileset.png" id="1_uh0r3"]
+[ext_resource type="Texture2D" uid="uid://ce403nidnxtdf" path="res://levels/tilesets/sprites/forgotten_forest_example_tileset.png" id="1_uh0r3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcive"]
 texture = ExtResource("1_uh0r3")
@@ -532,13 +532,17 @@ texture_region_size = Vector2i(32, 32)
 18:13/0 = 0
 18:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -16, 6, -16, 6, -6, -4, -12)
 19:13/0 = 0
-19:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14, -10, 16, -10, 16, 16, -10, 16, -10, 10, -14, 4)
+19:13/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 2, -16, 2)
+19:13/0/physics_layer_1/polygon_0/one_way = true
 20:13/0 = 0
-20:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -10, 16, -10, 16, 16, -16, 16)
+20:13/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 2, -16, 2)
+20:13/0/physics_layer_1/polygon_0/one_way = true
 21:13/0 = 0
-21:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -10, 16, -10, 16, 16, -16, 16)
+21:13/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 2, -16, 2)
+21:13/0/physics_layer_1/polygon_0/one_way = true
 22:13/0 = 0
-22:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -10, 12, -10, 12, -6, 14, 2, 12, 16, -16, 16)
+22:13/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 2, -16, 2)
+22:13/0/physics_layer_1/polygon_0/one_way = true
 23:13/0 = 0
 24:13/0 = 0
 25:13/0 = 0
@@ -561,17 +565,9 @@ texture_region_size = Vector2i(32, 32)
 17:14/0 = 0
 17:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 19:14/0 = 0
-19:14/0/physics_layer_1/polygon_0/points = PackedVector2Array(-12, -16, 16, -16, 16, 16, -12, 16, -10, 4)
-19:14/0/physics_layer_1/polygon_0/one_way = true
 20:14/0 = 0
-20:14/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
-20:14/0/physics_layer_1/polygon_0/one_way = true
 21:14/0 = 0
-21:14/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
-21:14/0/physics_layer_1/polygon_0/one_way = true
 22:14/0 = 0
-22:14/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 14, -16, 14, -4, 6, 0, 12, 2, 12, 16, -16, 16)
-22:14/0/physics_layer_1/polygon_0/one_way = true
 24:14/0 = 0
 26:14/0 = 0
 27:14/0 = 0
@@ -580,17 +576,9 @@ texture_region_size = Vector2i(32, 32)
 30:14/0 = 0
 2:15/0 = 0
 19:15/0 = 0
-19:15/0/physics_layer_1/polygon_0/points = PackedVector2Array(-12, -16, 16, -16, 16, 16, -12, 16, -12, 8, -8, 0)
-19:15/0/physics_layer_1/polygon_0/one_way = true
 20:15/0 = 0
-20:15/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
-20:15/0/physics_layer_1/polygon_0/one_way = true
 21:15/0 = 0
-21:15/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
-21:15/0/physics_layer_1/polygon_0/one_way = true
 22:15/0 = 0
-22:15/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 12, -16, 12, -10, 8, -8, 12, -6, 12, 2, 8, 6, 14, 16, -16, 16)
-22:15/0/physics_layer_1/polygon_0/one_way = true
 24:15/0 = 0
 26:15/0 = 0
 27:15/0 = 0

@@ -167,3 +167,6 @@ hit_from_inside = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=253913029]
 libraries/ = SubResource("AnimationLibrary_od3ui")
 autoplay = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2071445210]
+position = Vector2(0, -38)

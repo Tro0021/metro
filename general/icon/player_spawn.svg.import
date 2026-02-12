@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce403nidnxtdf"
-path="res://.godot/imported/forgotten_forest_example_tileset.png-3277205aa86decc8e0a67df9ac2fbd81.ctex"
+uid="uid://kryg4fdefqx2"
+path="res://.godot/imported/player_spawn.svg-ffa87054e1a81e4f2388d5cb1244eafa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/tilesets/sprites/forgotten_forest_example_tileset.png"
-dest_files=["res://.godot/imported/forgotten_forest_example_tileset.png-3277205aa86decc8e0a67df9ac2fbd81.ctex"]
+source_file="res://general/icon/player_spawn.svg"
+dest_files=["res://.godot/imported/player_spawn.svg-ffa87054e1a81e4f2388d5cb1244eafa.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
