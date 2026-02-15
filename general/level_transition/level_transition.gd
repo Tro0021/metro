@@ -47,7 +47,7 @@ func _on_load_scene_finished() -> void:
 	area_2d.monitoring = false
 	area_2d.body_entered.connect(_on_player_entered)
 	await get_tree().physics_frame
-	await get_tree().physics_framed
+	await get_tree().physics_frame
 	area_2d.monitoring = true
 	pass
 
