@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="Metro"
+config/name="Metro (Copy)"
 run/main_scene="uid://ccxi1l11cch26"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://dbgv3y7hy66oa"
+
+[autoload]
+
+SceneManager="*uid://ct0lpoipi86bc"
 
 [display]
 
@@ -23,9 +27,9 @@ window/size/window_width_override=1440
 window/size/window_height_override=810
 window/stretch/mode="canvas_items"
 
-[editor_plugins]
+[global_group]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+Player=""
 
 [input]
 
@@ -78,6 +82,7 @@ action={
 
 2d_physics/layer_1="Ground"
 2d_physics/layer_2="One way platform"
+2d_physics/layer_5="player"
 
 [physics]
 
