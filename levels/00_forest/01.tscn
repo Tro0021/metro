@@ -2,8 +2,8 @@
 
 [ext_resource type="TileSet" uid="uid://b5sq4hkfadurb" path="res://levels/tilesets/forgotten_forest.tres" id="1_fvrtv"]
 [ext_resource type="Script" uid="uid://chyf5cxksaif0" path="res://general/scripts/level_bounds.gd" id="3_1pu88"]
-[ext_resource type="PackedScene" uid="uid://ndnul1dqpeag" path="res://Player/player.tscn" id="4_qmxb0"]
 [ext_resource type="PackedScene" uid="uid://bodpglonrieph" path="res://general/level_transition/level_transition.tscn" id="4_vhcel"]
+[ext_resource type="PackedScene" uid="uid://dc8oyrar5w1v7" path="res://general/playerspawn/player_spawn.tscn" id="5_qmxb0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pu3y4"]
 load_path = "res://.godot/imported/forgotten_forest_example_tileset.png-3277205aa86decc8e0a67df9ac2fbd81.ctex"
@@ -1240,9 +1240,6 @@ sources/0 = SubResource("TileSetAtlasSource_fcive")
 
 [node name="01" type="Node2D" unique_id=883773786]
 
-[node name="Player" parent="." unique_id=1461994922 instance=ExtResource("4_qmxb0")]
-position = Vector2(960, 176)
-
 [node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=142360]
 position = Vector2(0, 4)
 tile_set = ExtResource("1_fvrtv")
@@ -1266,3 +1263,6 @@ position = Vector2(1056, 192)
 size = 10
 location = 1
 target_level = "uid://c0baf5cuh4bar"
+
+[node name="PlayerSpawn" parent="." unique_id=1024539009 instance=ExtResource("5_qmxb0")]
+position = Vector2(68, 214)
