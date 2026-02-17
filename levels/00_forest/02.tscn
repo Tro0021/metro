@@ -1,10 +1,20 @@
 [gd_scene format=4 uid="uid://c0baf5cuh4bar"]
 
+[ext_resource type="Texture2D" uid="uid://bx60vokv2jmio" path="res://levels/backgrounds/game_background_3/game_background_3.1.png" id="1_s2tn3"]
 [ext_resource type="TileSet" uid="uid://b5sq4hkfadurb" path="res://levels/tilesets/forgotten_forest.tres" id="1_uqe0m"]
 [ext_resource type="Script" uid="uid://chyf5cxksaif0" path="res://general/scripts/level_bounds.gd" id="2_epyyu"]
 [ext_resource type="PackedScene" uid="uid://bodpglonrieph" path="res://general/level_transition/level_transition.tscn" id="3_epyyu"]
+[ext_resource type="PackedScene" uid="uid://dc8oyrar5w1v7" path="res://general/playerspawn/player_spawn.tscn" id="5_o5ap7"]
 
 [node name="02" type="Node2D" unique_id=363524789]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1807164932]
+scroll_offset = Vector2(-8, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=178292881]
+position = Vector2(548, 119.999985)
+scale = Vector2(0.5625, 0.23703703)
+texture = ExtResource("1_s2tn3")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=1055896235]
 tile_map_data = PackedByteArray("AAD//wcAAAADAAIAAAD//wgAAAADAAIAAAADAAgAAAALAAkAAAAEAAgAAAALAAkAAAAFAAgAAAAMAAkAAAAGAAgAAAANAAkAAAAHAAgAAAAOAAkAAAADAAcAAAALAAkAAAAEAAcAAAALAAkAAAAFAAcAAAAMAAkAAAAGAAcAAAANAAkAAAAHAAcAAAAOAAkAAAA=")
@@ -34,3 +44,6 @@ position = Vector2(96, 256)
 size = 5
 location = 3
 target_level = "uid://bpn7nuu62dbn3"
+
+[node name="PlayerSpawn" parent="." unique_id=1024539009 instance=ExtResource("5_o5ap7")]
+position = Vector2(48, 152)

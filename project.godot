@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Metro (Copy)"
+config/name="metro"
 run/main_scene="uid://ccxi1l11cch26"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://dbgv3y7hy66oa"
@@ -18,6 +18,7 @@ config/icon="uid://dbgv3y7hy66oa"
 [autoload]
 
 SceneManager="*uid://ct0lpoipi86bc"
+SaveManager="*uid://bg15ur1gn0ijt"
 
 [display]
 

@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://b5sq4hkfadurb" path="res://levels/tilesets/forgotten_forest.tres" id="1_biydo"]
 [ext_resource type="Script" uid="uid://chyf5cxksaif0" path="res://general/scripts/level_bounds.gd" id="1_rlhhg"]
 [ext_resource type="PackedScene" uid="uid://bodpglonrieph" path="res://general/level_transition/level_transition.tscn" id="3_vv2jw"]
+[ext_resource type="PackedScene" uid="uid://dc8oyrar5w1v7" path="res://general/playerspawn/player_spawn.tscn" id="4_r7adf"]
 
 [node name="03" type="Node2D" unique_id=255556289]
 
@@ -30,3 +31,6 @@ size = 5
 location = 2
 target_level = "uid://c0baf5cuh4bar"
 target_area_name = "LevelTransition2"
+
+[node name="PlayerSpawn" parent="." unique_id=1024539009 instance=ExtResource("4_r7adf")]
+position = Vector2(110, 62)

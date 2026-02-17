@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://ccxi1l11cch26"]
 
 [ext_resource type="TileSet" uid="uid://b5sq4hkfadurb" path="res://levels/tilesets/forgotten_forest.tres" id="1_fvrtv"]
+[ext_resource type="Texture2D" uid="uid://c2rs0m0x5imbe" path="res://levels/backgrounds/game_background_1/game_background_1.png" id="1_qmxb0"]
 [ext_resource type="Script" uid="uid://chyf5cxksaif0" path="res://general/scripts/level_bounds.gd" id="3_1pu88"]
 [ext_resource type="PackedScene" uid="uid://bodpglonrieph" path="res://general/level_transition/level_transition.tscn" id="4_vhcel"]
 [ext_resource type="PackedScene" uid="uid://dc8oyrar5w1v7" path="res://general/playerspawn/player_spawn.tscn" id="5_qmxb0"]
@@ -1240,6 +1241,13 @@ sources/0 = SubResource("TileSetAtlasSource_fcive")
 
 [node name="01" type="Node2D" unique_id=883773786]
 
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=127392721]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1028417929]
+position = Vector2(528.5, 157.99997)
+scale = Vector2(0.5817708, 0.2962963)
+texture = ExtResource("1_qmxb0")
+
 [node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=142360]
 position = Vector2(0, 4)
 tile_set = ExtResource("1_fvrtv")
@@ -1265,4 +1273,4 @@ location = 1
 target_level = "uid://c0baf5cuh4bar"
 
 [node name="PlayerSpawn" parent="." unique_id=1024539009 instance=ExtResource("5_qmxb0")]
-position = Vector2(68, 214)
+position = Vector2(60, 220)
