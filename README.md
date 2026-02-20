@@ -12,7 +12,9 @@ This project focuses on fast-paced gameplay, player combat, and interactive envi
 - ✅ Built using Godot 4.6  
 
 ---
-For controls you can use the arrow keys or WASD and the space bar to jump
+CONTROLS
+
+For controls you can use the arrow keys or WASD and the space bar to jump and there's no combat for now as it is still being developed.
 
 ## 🛠️ Built With
 
