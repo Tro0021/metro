@@ -12,19 +12,7 @@ This project focuses on fast-paced gameplay, player combat, and interactive envi
 - ✅ Built using Godot 4.6  
 
 ---
-
-## 🌌 Portal Mini Game System (Planned / In Progress)
-
-The game will include a **Portal System** where the player can enter a portal and load a separate mini-game scene.
-
-### Portal Flow:
-1. Player enters portal  
-2. Main game switches scene  
-3. Mini game loads  
-4. Player completes mini game  
-5. Player returns back to main game  
-
----
+For controls you can use the arrow keys or WASD and the space bar to jump
 
 ## 🛠️ Built With
 
