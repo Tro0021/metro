@@ -15,6 +15,7 @@ This project focuses on fast-paced gameplay, player combat, and interactive envi
 CONTROLS
 
 Use the Left and Right Arrow keys to move your character left and right through the level. Press the Down Arrow key to crouch, allowing you to avoid obstacles. Jump using the Spacebar — the height of your jump depends on how long you hold the key, giving you precise control over movement. You can also perform a crouch jump (Down + Space) to drop through certain one-way wooden platforms, adding an extra layer of strategy to navigation and platforming.
+
 ## 🛠️ Built With
 
 - **Godot Engine 4.6**
