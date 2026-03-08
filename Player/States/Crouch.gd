@@ -1,9 +1,15 @@
 class_name PlayerStateCrouch extends PlayerState
 
+<<<<<<< HEAD
 const PLATFORM_DROP_OFFSET := 4
 
 @export var deceleration_rate : float = 10
 
+=======
+@export var deceleration_rate : float = 10
+
+
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 #What happens when this state is initialized ?
 func init() -> void:
 	pass
@@ -28,7 +34,11 @@ func exit() -> void:
 func handled_input( _event: InputEvent) -> PlayerState:
 	if _event.is_action_pressed("jump"):
 		if player.one_way_platform_ray_cast.is_colliding() == true:
+<<<<<<< HEAD
 			player.position.y += PLATFORM_DROP_OFFSET
+=======
+			player.position.y += 4
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 			return fall
 		return jump
 	return next_state

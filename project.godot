@@ -19,7 +19,10 @@ config/icon="uid://dbgv3y7hy66oa"
 
 SceneManager="*uid://ct0lpoipi86bc"
 SaveManager="*uid://bg15ur1gn0ijt"
+<<<<<<< HEAD
 PlayerManager="*uid://d2v3itp7f3exn"
+=======
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 
 [display]
 

@@ -37,11 +37,15 @@ func process( _delta: float ) -> PlayerState:
 
 #What happens each physics_process tick in this state?
 func physics_process( _delta: float ) -> PlayerState:
+<<<<<<< HEAD
 	player.velocity.x = move_toward(
 	player.velocity.x,
 	0,
 	player.friction * _delta
 )
+=======
+	player.velocity.x = 0
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	if player.is_on_floor() == false:
 		return fall
 	return next_state

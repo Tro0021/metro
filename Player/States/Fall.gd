@@ -34,16 +34,26 @@ func exit() -> void:
 
 
 #What happens when an input is pressed?
+<<<<<<< HEAD
 func handled_input(_event: InputEvent) -> PlayerState:
 	if _event.is_action_pressed("dash") and player.abilities["dash"]:
 		return dash
 
 	if _event.is_action_pressed("jump"):
+=======
+func handled_input( _event: InputEvent) -> PlayerState:
+	#Handle_ input
+	if _event.is_action_pressed( "jump" ):
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 		if coyote_timer > 0:
 			return jump
 		else:
 			buffer_timer = jump_buffer_time
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	return next_state
 
 
@@ -62,11 +72,15 @@ func physics_process( _delta: float ) -> PlayerState:
 		if buffer_timer > 0:
 			return jump
 		return idle
+<<<<<<< HEAD
 		player.velocity.x = move_toward(
 			player.velocity.x,
 			player.direction.x * player.move_speed,
 			player.acceleration * _delta
 		)
+=======
+	player.velocity.x = player.direction.x * player.move_speed
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	return next_state
 
 

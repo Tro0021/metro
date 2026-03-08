@@ -2,10 +2,13 @@
 @icon("res://general/icon/level_transition.svg")
 class_name LevelTransition extends Node2D
 
+<<<<<<< HEAD
 const SIDE_OFFSET := 12
 const TOP_OFFSET := -2
 const BOTTOM_OFFSET := 48
 
+=======
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 enum SIDE {LEFT, RIGHT, TOP, BOTTOM}
 
 @export_range(2, 12, 1, "or_greater") var size : int = 2 :
@@ -42,7 +45,11 @@ func _on_player_entered(_n : Node2D) -> void:
 
 func _on_new_scene_ready(target_name : String, offset : Vector2) -> void:
 	if target_name == name:
+<<<<<<< HEAD
 		var player : Node = PlayerManager.player
+=======
+		var player : Node = get_tree().get_first_node_in_group("Player")
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 		player.global_position = global_position + offset
 	pass
 
@@ -82,6 +89,7 @@ func get_offset(player : Node2D) -> Vector2:
 	if location == SIDE.LEFT or location == SIDE.RIGHT:
 		offset.y = player_pos.y - self.global_position.y
 		if location == SIDE.LEFT:
+<<<<<<< HEAD
 			offset.x = -SIDE_OFFSET
 		else:
 			offset.x = SIDE_OFFSET
@@ -91,5 +99,16 @@ func get_offset(player : Node2D) -> Vector2:
 			offset.y = TOP_OFFSET
 		else:
 			offset.y = BOTTOM_OFFSET
+=======
+			offset.x = -12
+		else:
+			offset.x = 12
+	else:
+		offset.x = player_pos.x - self.global_position.x
+		if location == SIDE.TOP:
+			offset.y = -2
+		else:
+			offset.y = 48
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	
 	return offset

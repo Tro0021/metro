@@ -6,7 +6,10 @@
 [ext_resource type="Script" uid="uid://dpgu52w14b04c" path="res://Player/States/jump.gd" id="4_k53q1"]
 [ext_resource type="Script" uid="uid://dsaydt57c4ba4" path="res://Player/States/Fall.gd" id="5_fhl08"]
 [ext_resource type="Script" uid="uid://5e3sqiys54dr" path="res://Player/States/Crouch.gd" id="6_fhl08"]
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://g8bc36u3qy6h" path="res://Player/States/PlayerStateDash.gd" id="7_od3ui"]
+=======
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 [ext_resource type="Texture2D" uid="uid://cqd513gt5be6r" path="res://Player/Sprites/hero.png" id="7_vtle1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtle1"]
@@ -136,11 +139,14 @@ script = ExtResource("5_fhl08")
 unique_name_in_owner = true
 script = ExtResource("6_fhl08")
 
+<<<<<<< HEAD
 [node name="Dash" type="Node" parent="States" unique_id=694231176]
 unique_name_in_owner = true
 script = ExtResource("7_od3ui")
 metadata/_custom_type_script = "uid://g8bc36u3qy6h"
 
+=======
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1166432231]
 modulate = Color(0.36874998, 0.36874998, 0.36874998, 1)
 position = Vector2(0, -39)

@@ -18,6 +18,7 @@ func exit() -> void:
 
 
 #What happens when an input is pressed?
+<<<<<<< HEAD
 func handled_input(_event: InputEvent) -> PlayerState:
 	if _event.is_action_pressed("dash") and player.abilities["dash"]:
 		return dash
@@ -25,6 +26,11 @@ func handled_input(_event: InputEvent) -> PlayerState:
 	if _event.is_action_pressed("jump"):
 		return jump
 
+=======
+func handled_input( _event: InputEvent) -> PlayerState:
+	if _event.is_action_pressed( "jump" ):
+		return jump
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	return next_state
 
 
@@ -39,11 +45,15 @@ func process( _delta: float ) -> PlayerState:
 
 #What happens each physics_process tick in this state?
 func physics_process( _delta: float ) -> PlayerState:
+<<<<<<< HEAD
 	player.velocity.x = move_toward(
 		player.velocity.x,
 		player.direction.x * player.move_speed,
 		player.acceleration * _delta
 )
+=======
+	player.velocity.x = player.direction.x * player.move_speed
+>>>>>>> 0cdac4234134e59f003d1cc5c763d4504afeaec5
 	if player.is_on_floor() == false:
 		return fall
 	return next_state
